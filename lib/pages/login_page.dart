@@ -1,3 +1,5 @@
+import 'package:catalog_flutter_application/pages/home_page.dart';
+import 'package:catalog_flutter_application/utils/routes.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -32,34 +34,38 @@ class LoginPage extends StatelessWidget {
                   height: 30,
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: 30, right: 30),
-                  child: TextField(
-                    decoration: InputDecoration(
-                        hintText: 'Enter Email',
-                        label: const Text('Email'),
-                        border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10))),
+                  padding: const EdgeInsets.only(left: 25, right: 25),
+                  child: Column(
+                    children: [
+                      TextField(
+                        decoration: InputDecoration(
+                            hintText: 'Enter Email',
+                            label: const Text('Email'),
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10))),
+                      ),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      TextField(
+                        obscureText: true,
+                        decoration: InputDecoration(
+                            hintText: 'Enter Password',
+                            label: const Text('Password'),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            )),
+                      ),
+                    ],
                   ),
                 ),
                 const SizedBox(
-                  height: 20,
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 30, right: 30),
-                  child: TextField(
-                    decoration: InputDecoration(
-                        hintText: 'Enter Password',
-                        label: const Text('Password'),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        )),
-                  ),
-                ),
-                SizedBox(
                   height: 15,
                 ),
                 ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, Routes.HOME);
+                    },
                     child: const Text(
                       'Login',
                       style: TextStyle(
