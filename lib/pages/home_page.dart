@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:catalog_flutter_application/models/catalog.dart';
 import 'package:catalog_flutter_application/widgets/catalogItem.dart';
 import 'package:catalog_flutter_application/widgets/drawer.dart';
@@ -14,8 +13,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  var dummyList = List.generate(10, (index) => ItemModel.product[0]);
-
   @override
   void initState() {
     // TODO: implement initState
@@ -24,10 +21,13 @@ class _HomePageState extends State<HomePage> {
   }
 
   void loadData() async {
-    final cataData = await rootBundle.loadString('assets/files/catalog.json');
-    final data = jsonDecode(cataData);
-    final productsData = data["product"];
-    print(productsData);
+    await Future.delayed(Duration(seconds: 5));
+    final jsonData = await rootBundle.loadString('assets/files/catalog.json');
+    final data = jsonDecode(jsonData);
+    final productsData = data['product'];
+    ItemModel.item =
+        List.from(productsData).map((e) => Item.fromJson(e)).toList();
+    setState(() {});
   }
 
   @override
@@ -36,14 +36,16 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text('Catalog Application'),
       ),
-      body: ListView.builder(
-        itemCount: dummyList.length,
-        itemBuilder: (context, index) {
-          return CatalogItem(
-            items: dummyList[index],
-          );
-        },
-      ),
+      body: (ItemModel.item.length != null && ItemModel.item.isNotEmpty)
+          ? ListView.builder(
+              itemCount: ItemModel.item.length,
+              itemBuilder: (context, index) {
+                return CatalogItem(
+                  item: ItemModel.item[index],
+                );
+              },
+            )
+          : Center(child: CircularProgressIndicator()),
       drawer: MDrawer(),
     );
   }

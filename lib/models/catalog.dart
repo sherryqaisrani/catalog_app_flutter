@@ -1,29 +1,39 @@
 class ItemModel {
-  static final product = [
-    Items(
-        id: 123456,
-        name: "Iphone 11",
-        desc: "This is Iphone 11 pro max Mobile Phone",
-        price: 999,
-        color: "#e6c327",
-        imgeUrl:
-            "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-11-1.jpg")
-  ];
+  static List<Item> item = [];
 }
 
-class Items {
+class Item {
   int id;
-  String name;
-  String desc;
-  double price;
-  String color;
-  String imgeUrl;
+  String title;
+  int price;
+  String description;
+  String category;
+  String image;
 
-  Items(
+  Item(
       {required this.id,
-      required this.name,
-      required this.desc,
+      required this.title,
       required this.price,
-      required this.color,
-      required this.imgeUrl});
+      required this.description,
+      required this.category,
+      required this.image});
+
+  factory Item.fromJson(Map<String, dynamic> map) {
+    return Item(
+        id: map["id"],
+        title: map["title"],
+        price: map["price"],
+        description: map["description"],
+        category: map["category"],
+        image: map["image"]);
+  }
+
+  toMap() => {
+        "id": id,
+        "title": title,
+        "price": price,
+        "description": description,
+        "category": category,
+        "image": image
+      };
 }

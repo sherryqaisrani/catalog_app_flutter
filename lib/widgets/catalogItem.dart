@@ -2,10 +2,10 @@ import 'package:catalog_flutter_application/models/catalog.dart';
 import 'package:flutter/material.dart';
 
 class CatalogItem extends StatelessWidget {
-  final Items items;
+  final Item item;
 
-  CatalogItem({Key? key, required this.items})
-      : assert(items != null),
+  const CatalogItem({Key? key, required this.item})
+      : assert(item != null),
         super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -13,11 +13,11 @@ class CatalogItem extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(15),
         child: ListTile(
-          leading: Image.network(items.imgeUrl),
-          title: Text(items.name),
-          subtitle: Text(items.desc),
+          leading: Image.network(item.image),
+          title: Text(item.title),
+          subtitle: Text(item.description),
           trailing: Text(
-            "\$${items.price}",
+            "\$${item.price}",
             style: const TextStyle(
                 color: Colors.deepPurple,
                 fontWeight: FontWeight.bold,
