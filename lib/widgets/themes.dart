@@ -27,4 +27,7 @@ class CustomeThemes {
                 TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
         textTheme: Theme.of(context).textTheme,
       );
+
+  static Color creemcolor = Color(0xfff5f5f5);
+  static Color darkbluishColor = Color(0xff403b58);
 }

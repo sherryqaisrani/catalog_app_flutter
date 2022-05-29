@@ -3,37 +3,37 @@ class ItemModel {
 }
 
 class Item {
-  int id;
-  String title;
-  int price;
-  String description;
-  String category;
-  String image;
+  final int id;
+  final String name;
+  final int price;
+  final String desc;
+  final String color;
+  final String image;
 
   Item(
       {required this.id,
-      required this.title,
+      required this.name,
       required this.price,
-      required this.description,
-      required this.category,
+      required this.desc,
+      required this.color,
       required this.image});
 
   factory Item.fromJson(Map<String, dynamic> map) {
     return Item(
-        id: map["id"],
-        title: map["title"],
+        id: map["id"] as int,
+        name: map["name"] as String,
         price: map["price"],
-        description: map["description"],
-        category: map["category"],
+        desc: map["desc"],
+        color: map["color"],
         image: map["image"]);
   }
 
   toMap() => {
         "id": id,
-        "title": title,
+        "name": name,
         "price": price,
-        "description": description,
-        "category": category,
+        "desc": desc,
+        "color": color,
         "image": image
       };
 }

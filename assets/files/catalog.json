@@ -2,163 +2,67 @@
     "product": [
         {
             "id": 1,
-            "title": "Fjallraven",
-            "price": 109,
-            "description": "Your perfect pack",
-            "category": "men's clothing",
-            "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+            "name": "iPhone 12 Pro",
+            "desc": "Apple iPhone 12th generation",
+            "price": 999,
+            "color": "#33505a",
+            "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-pro-blue-hero?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1604021661000"
         },
         {
             "id": 2,
-            "title": "Mens Casual",
-            "price": 2254,
-            "description": "Slim-fitting style.",
-            "category": "men's clothing",
-            "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+            "name": "Pixel 5",
+            "desc": "Google Pixel phone 5th generation",
+            "price": 699,
+            "color": "#00ac51",
+            "image": "https://www.telstra.com.au/content/dam/tcom/lego/2020/plans-devices/mobiles/google-pixel-5/shared-google-pixel-5-black-05-900x1200.png"
         },
         {
             "id": 3,
-            "title": "Mens Cotton Jacket",
-            "price": 555,
-            "description": "great outerwear jackets for Spring",
-            "category": "men's clothing",
-            "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
+            "name": "M1 Macbook Air",
+            "desc": "Apple Macbook air with apple silicon",
+            "price": 1099,
+            "color": "#e0bfae",
+            "image": "https://support.apple.com/library/APPLE/APPLECARE_ALLGEOS/SP825/macbookair.png"
         },
         {
             "id": 4,
-            "title": "Mens Casual Slim Fit",
-            "price": 1550,
-            "description": "The color could be slightly",
-            "category": "men's clothing",
-            "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
+            "name": "Playstation 5",
+            "desc": "Sony Playstation 5th generation",
+            "price": 500,
+            "color": "#544ee4",
+            "image": "https://i1.wp.com/freepngimages.com/wp-content/uploads/2020/07/Playstation-5-games-console-transparent-background-png-image.png?fit=1000%2C1000"
         },
         {
             "id": 5,
-            "title": "Chain Bracelet",
-            "price": 695,
-            "description": "From our Legends Collection",
-            "category": "jewelery",
-            "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+            "name": "Airpods Pro",
+            "desc": "Apple Aipods Pro 1st generation",
+            "price": 200,
+            "color": "#e3e4e9",
+            "image": "https://crdms.images.consumerreports.org/c_lfill,w_598/prod/products/cr/models/400116-wireless-portable-headphones-apple-airpods-pro-10009323.png"
         },
         {
             "id": 6,
-            "title": "Gold Petite Micropave",
-            "price": 168,
-            "description": "Satisfaction Guaranteed.",
-            "category": "jewelery",
-            "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+            "name": "iPad Pro",
+            "desc": "Apple iPad Pro 2020 edition",
+            "price": 799,
+            "color": "#f73984",
+            "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-silver-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583551131102"
         },
         {
             "id": 7,
-            "title": "White Gold Princess",
-            "price": 900,
-            "description": "Classic Created Wedding Engagement",
-            "category": "jewelery",
-            "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg"
+            "name": "Galaxy S21 Ultra",
+            "desc": "Samsung Galaxy S21 Ultra 2021 edition",
+            "price": 1299,
+            "color": "#1c1c1c",
+            "image": "https://lh3.googleusercontent.com/qRQPjHrhRVIs-xnfNSyiPXOH2vH97ylMacgbTKebqJtRfNH3LlYo8pN-5igsLDWUH62tGl5zNpTsl5xd8SprzGmXoCEmWFOi2-2cQVGS-r3PaRXHt62DmJHq-jrYX0UQvWZ9BA=s800-c"
         },
         {
             "id": 8,
-            "title": "Pierced Owl",
-            "price": 1010,
-            "description": "Made of 316L Stainless Steel",
-            "category": "jewelery",
-            "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg"
-        },
-        {
-            "id": 9,
-            "title": "Portable Hard Drive - USB 3.0 ",
-            "price": 640,
-            "description": "USB 3.0 and USB 2.0 Compatibility",
-            "category": "electronics",
-            "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg"
-        },
-        {
-            "id": 10,
-            "title": "SanDisk SSD",
-            "price": 109,
-            "description": "application load and response.",
-            "category": "electronics",
-            "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg"
-        },
-        {
-            "id": 11,
-            "title": "Silicon SATA III 2.5",
-            "price": 109,
-            "description": "3D NAND flash are applied",
-            "category": "electronics",
-            "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg"
-        },
-        {
-            "id": 12,
-            "title": "WD 4TB External Hard Drive",
-            "price": 114,
-            "description": "Expand your PS4 gaming experience",
-            "category": "electronics",
-            "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg"
-        },
-        {
-            "id": 13,
-            "title": "Acer IPS Ultra-Thin",
-            "price": 599,
-            "description": "21. 5 inches Full HD (1920 x 1080)",
-            "category": "electronics",
-            "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"
-        },
-        {
-            "id": 14,
-            "title": "Samsung 49-Inch CHG90 144Hz",
-            "price": 999,
-            "description": "CURVED GAMING MONITOR",
-            "category": "electronics",
-            "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg"
-        },
-        {
-            "id": 15,
-            "title": "BIYLACLESEN Women's",
-            "price": 566,
-            "description": "US standard size",
-            "category": "women's clothing",
-            "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg"
-        },
-        {
-            "id": 16,
-            "title": "Lock and Love Women's",
-            "price": 29,
-            "description": "100% POLYURETHANE(shell)",
-            "category": "women's clothing",
-            "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg"
-        },
-        {
-            "id": 17,
-            "title": "Rain Jacket Women",
-            "price": 39,
-            "description": "Lightweight",
-            "category": "women's clothing",
-            "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg"
-        },
-        {
-            "id": 18,
-            "title": "MBJ Women's",
-            "price": 995,
-            "description": "95% RAYON",
-            "category": "women's clothing",
-            "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg"
-        },
-        {
-            "id": 19,
-            "title": "Opna Women's",
-            "price": 796,
-            "description": "100% Polyester",
-            "category": "women's clothing",
-            "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg"
-        },
-        {
-            "id": 20,
-            "title": "Womens T Shirt",
-            "price": 1299,
-            "description": "95%Cotton",
-            "category": "women's clothing",
-            "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg"
+            "name": "Galaxy S21",
+            "desc": "Samsung Galaxy S21 2021 edition",
+            "price": 899,
+            "color": "#7c95eb",
+            "image": "https://images.samsung.com/is/image/samsung/p6pim/za/galaxy-s21/gallery/za-clear-cover-galaxy-s21-5g-ef-qg991ttegww-363168624?$720_576_PNG$"
         }
     ]
 }
