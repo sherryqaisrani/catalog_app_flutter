@@ -21,7 +21,9 @@ class _DetailPageState extends State<DetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
       bottomNavigationBar: Container(
         color: Colors.white,
         child: ButtonBar(
@@ -38,8 +40,8 @@ class _DetailPageState extends State<DetailPage> {
                 ),
               ),
               onPressed: () {},
-              child: "Buy".text.make(),
-            ).wh(100, 50),
+              child: "Add To Cart".text.make(),
+            ).wh(120, 50),
           ],
         ).p32(),
       ),
@@ -68,6 +70,12 @@ class _DetailPageState extends State<DetailPage> {
                           .make(),
                       catalog.desc.text.xl
                           .textStyle(context.captionStyle)
+                          .make(),
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tristique tellus, non aliquet sapien. Nulla fringilla eros quis leo consequat, non faucibus metus luctus. "
+                          .text
+                          .textStyle(
+                            context.captionStyle,
+                          )
                           .make(),
                       10.heightBox,
                     ],

@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   void loadData() async {
-    await Future.delayed(Duration(seconds: 5));
+    await Future.delayed(const Duration(seconds: 5));
     final jsonData = await rootBundle.loadString('assets/files/catalog.json');
     final data = jsonDecode(jsonData);
     final productsData = data['product'];
@@ -37,16 +37,25 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: CustomeThemes.creemcolor,
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: CustomeThemes.darkbluishColor,
+        child: const Icon(
+          Icons.add,
+        ),
+        onPressed: () {
+          Navigator.pushNamed(context, '/cartPage');
+        },
+      ),
       body: Container(
         padding: Vx.m32,
         child: SafeArea(
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            CatalogHeader(),
+            const CatalogHeader(),
             if (ItemModel.item != null && ItemModel.item.isNotEmpty)
-              CatalogList().py16().expand()
+              const CatalogList().py16().expand()
             else
-              CircularProgressIndicator().centered().expand(),
+              const CircularProgressIndicator().centered().expand(),
           ]),
         ),
       ),
