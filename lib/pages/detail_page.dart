@@ -25,7 +25,7 @@ class _DetailPageState extends State<DetailPage> {
         backgroundColor: Colors.transparent,
       ),
       bottomNavigationBar: Container(
-        color: Colors.white,
+        color: context.theme.cardColor,
         child: ButtonBar(
           alignment: MainAxisAlignment.spaceBetween,
           buttonPadding: EdgeInsets.zero,
@@ -34,7 +34,7 @@ class _DetailPageState extends State<DetailPage> {
             ElevatedButton(
               style: ButtonStyle(
                 backgroundColor:
-                    MaterialStateProperty.all(CustomeThemes.darkbluishColor),
+                    MaterialStateProperty.all(context.theme.buttonColor),
                 shape: MaterialStateProperty.all(
                   StadiumBorder(),
                 ),
@@ -45,7 +45,7 @@ class _DetailPageState extends State<DetailPage> {
           ],
         ).p32(),
       ),
-      backgroundColor: CustomeThemes.creemcolor,
+      backgroundColor: context.canvasColor,
       body: SafeArea(
         bottom: false,
         child: Column(
@@ -61,18 +61,20 @@ class _DetailPageState extends State<DetailPage> {
                 arcType: VxArcType.CONVEY,
                 child: Container(
                   width: context.screenWidth,
-                  color: Colors.white,
+                  color: context.cardColor,
                   child: Column(
                     children: [
                       catalog.name.text.xl4
-                          .color(CustomeThemes.darkbluishColor)
+                          .color(context.accentColor)
                           .bold
                           .make(),
                       catalog.desc.text.xl
                           .textStyle(context.captionStyle)
+                          .color(context.accentColor)
                           .make(),
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tristique tellus, non aliquet sapien. Nulla fringilla eros quis leo consequat, non faucibus metus luctus. "
                           .text
+                          .color(context.accentColor)
                           .textStyle(
                             context.captionStyle,
                           )

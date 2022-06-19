@@ -1,6 +1,7 @@
 import 'package:catalog_flutter_application/pages/home_page.dart';
 import 'package:catalog_flutter_application/utils/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -31,7 +32,7 @@ class _LoginPageState extends State<LoginPage> {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          backgroundColor: Colors.white,
+          backgroundColor: context.canvasColor,
           body: SingleChildScrollView(
             child: Form(
               key: _validationKey,
@@ -119,7 +120,7 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                             ),
                       decoration: BoxDecoration(
-                        color: Colors.deepPurple,
+                        color: context.theme.buttonColor,
                         borderRadius: BorderRadius.circular(isButton ? 50 : 8),
                       ),
                     ),

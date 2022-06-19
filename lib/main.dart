@@ -2,7 +2,8 @@ import 'package:catalog_flutter_application/pages/cart_page.dart';
 import 'package:catalog_flutter_application/pages/home_page.dart';
 import 'package:catalog_flutter_application/pages/login_page.dart';
 import 'package:catalog_flutter_application/utils/routes.dart';
-import 'package:catalog_flutter_application/widgets/Themes.dart';
+import 'package:catalog_flutter_application/widgets/themes.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,10 +17,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      themeMode: ThemeMode.system,
       theme: CustomeThemes.lightTheme(context),
+      darkTheme: CustomeThemes.dartTheme(context),
       debugShowCheckedModeBanner: false,
       routes: {
-        '/': (context) => HomePage(),
+        '/': (context) => LoginPage(),
         Routes.HOME: (context) => HomePage(),
         Routes.LOGINPAGE: (context) => LoginPage(),
         Routes.CARTROUTE: (context) => CartPage(),
