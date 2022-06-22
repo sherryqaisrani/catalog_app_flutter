@@ -34,9 +34,11 @@ class CustomeThemes {
           elevation: 0.0,
           iconTheme: IconThemeData(color: Colors.white),
           titleTextStyle:
-              TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+              TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
-        textTheme: Theme.of(context).textTheme,
+        textTheme: Theme.of(context)
+            .textTheme
+            .copyWith(headline6: const TextStyle(color: Colors.white)),
       );
 
   static Color creemcolor = const Color(0xfff5f5f5);

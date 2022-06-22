@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       darkTheme: CustomeThemes.dartTheme(context),
       debugShowCheckedModeBanner: false,
       routes: {
-        '/': (context) => LoginPage(),
+        '/': (context) => HomePage(),
         Routes.HOME: (context) => HomePage(),
         Routes.LOGINPAGE: (context) => LoginPage(),
         Routes.CARTROUTE: (context) => CartPage(),
